@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: #444;
+        color: #eee;
+        font-family: sans-serif;
+      }
+      code {
+        font-family: consolas;
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Tablas</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Filas y Columnas</h2>
+        <p>Las tablas se colocan dentro de una etiqueta <code>Table</code></p>
+        <p>Las tablas tienen 3 partes</p>
+        <ul>
+          <li><code>Thead</code>: Cabecera</li>
+          <li><code>Tbody</code>: Cuerpo</li>
+          <li><code>Tfoot</code>: PIe de tabla</li>
+        </ul>
+      </section>
+      <hr />
+      <section>
+        <h2>Tabla simple</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Cantidad</th>
+              <th>Descripcipn</th>
+              <th>P. Unitario</th>
+              <th>P. Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2</td>
+              <td>Teclado mecanico Vanquis</td>
+              <td>S/200</td>
+              <td>S/400</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>MOuse HyperX</td>
+              <td>S/800</td>
+              <td>S/800</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Monitor</td>
+              <td>S/400</td>
+              <td>S/800</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3" align="center">TOTAL</td>
+              <td>S/2000</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <hr />
+      <section>
+        <h2>Combinando filas</h2>
+        <p>Para combinas filas se usa el atributo <code>rowspan</code></p>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Categoria</th>
+              <th>Etiquetas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="5">izquierda 1</td>
+              <td>derecha 1</td>
+            </tr>
+            <tr>
+              <td>derecha 2</td>
+            </tr>
+            <tr>
+              <td>derecha 3</td>
+            </tr>
+            <tr>
+              <td>derecha 4</td>
+            </tr>
+            <tr>
+              <td>derecha 5</td>
+            </tr>
+            <tr>
+              <td rowspan="5">izquierda 6</td>
+              <td>derecha 6</td>
+            </tr>
+            <tr>
+              <td>derecha 7</td>
+            </tr>
+            <tr>
+              <td>derecha 8</td>
+            </tr>
+            <tr>
+              <td>derecha 9</td>
+            </tr>
+            <tr>
+              <td>derecha 10</td>
+            </tr>
+            <tr>
+              <td rowspan="6">izquierda 11</td>
+              <td>derecha 11</td>
+            </tr>
+            <tr>
+              <td>derecha 12</td>
+            </tr>
+            <tr>
+              <td>derecha 13</td>
+            </tr>
+            <tr>
+              <td>derecha 14</td>
+            </tr>
+            <tr>
+              <td>derecha 15</td>
+            </tr>
+            <tr>
+              <td>derecha 16</td>
+            </tr>
+          </tbody>
+          <tfoot></tfoot>
+        </table>
+      </section>
+      <hr />
+      <section>
+        <h2>TAREA</h2>
+        <table border="1">
+          <tbody>
+            <tr>
+              <td rowspan="5">Supermercados</td>
+              <td></td>
+              <td>25/04/2022</td>
+            </tr>
+            <tr>
+              <td colspan="2">N° Fra. 32456</td>
+            </tr>
+            <tr>
+              <td>Texto 2</td>
+              <td rowspan="3">
+                Willian Baldeon Yllaconza <br />46910059 <br />
+                Pando 9 San Miguel
+              </td>
+            </tr>
+            <tr>
+              <td>Texto 2</td>
+            </tr>
+            <tr>
+              <td>Texto 2</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
