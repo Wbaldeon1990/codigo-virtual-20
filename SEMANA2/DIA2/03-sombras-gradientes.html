@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sombras-gradientes</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+      }
+      .card {
+        height: 500px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 3px solid #ccc;
+        box-shadow: #888 10px 30px 10px;
+        border-radius: 8px;
+        margin-top: 50px;
+        padding: 16px;
+      }
+      .caja-gradiente {
+        height: 300px;
+        /* border: 3px solid red;
+        margin-top: 30px; */
+        background-image: -webkit-linear-gradient(top, #3c1111, #906868);
+      }
+      .gradiente-2{
+        height: 500px;
+        background: #bdc3c7; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #2c3e50,
+          #bdc3c7
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #2c3e50,
+          #bdc3c7
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis assumenda
+      cum dolorum distinctio quidem, voluptas explicabo quibusdam ad et impedit
+      atque expedita eaque, nam consectetur quasi vel iste accusamus sint?
+    </div>
+    <div class="caja-gradiente"></div>
+    <div class="gradiente-2"></div>
+  </body>
+</html>
