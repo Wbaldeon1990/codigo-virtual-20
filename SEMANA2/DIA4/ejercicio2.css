@@ -1,0 +1,11 @@
+.caja-1{
+    width: 480px;
+    height: 480px;
+    border: solid black 2px;
+}
+.imagen-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
