@@ -1,31 +1,74 @@
-*{
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    overflow-x: hidden ;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-x: hidden;
 }
 /* animacion una */
-.texto-animado{
-    /* una animacion esta compuesta por un nombre y un tiempo */
-    animation-name: texto-volador;
-    animation-duration: 5s;
-
+.texo-animado {
+  /* una animacion esta compuesta por un nombre y un tiempo */
+  animation-name: texto-volador;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  border: solid red;
 }
 @keyframes texto-volador {
-    from{
-        margin-left: 100%;
-        width: 300%;
-        background-color: aqua;
-        border: none;
+  from {
+    margin-left: 100%;
+    width: 300%;
+    background-color: aqua;
+    border: none;
+  }
+  to {
+    margin-left: -100%;
+    background-color: brown;
+    color: white;
+    border: none;
+  }
+}
+/* paso 1 - nombras la animacion y su duracion */
+.image-animada {
+  animation-name: image-resize;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  width: 400px;
+  height: 400px;
+}
+@keyframes image-resize {
+    from {
+        width: 20px;
+        height: 20px;
     }
-    to
-    {
-        margin-left: -100%;
-        background-color: brown;
-        color: white;
-        border: none;
+    to {
+      width: 400px;
+      height: 400px;
+}
+}
+.box-uno{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    animation-name: box-animation;
+    animation-duration: 10s;
+}
+@keyframes box-animation{
+    0%{
+        background-image: url(./1.jpg);
+    }
+    25%{
+        background-image: url(./2.jpg);
+    }
+    50%{
+        background-image: url(./3.jpg);
+    }
+    75%{
+        background-image: url(./4.jpg);
+    }
+    1000%{
+        background-image: url(./image-avatar.png);
+    }
+   
 }
